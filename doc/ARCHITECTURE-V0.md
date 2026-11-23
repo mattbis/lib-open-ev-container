@@ -21,6 +21,7 @@
 ## 2. v0 Binary Wire Format (`oevcontbinf` v1, Little-Endian)
 
 ### File Header (16 bytes)
+
 | Offset | Size | Field | Description |
 |---|---|---|---|
 | 0 | 8 | `magic` | `"OEVCONT\0"` |
@@ -29,6 +30,7 @@
 | 12 | 4 | `qrate` | `0` = complete/reproducible, `>0` = partial |
 
 ### Chunk Record (24-byte header + `payload_len` bytes)
+
 | Offset | Size | Field | Description |
 |---|---|---|---|
 | 0 | 4 | `magic` | `"CHMK"` (resync marker for `repair`) |
