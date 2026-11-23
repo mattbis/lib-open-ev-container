@@ -41,7 +41,7 @@ $(LOEC_BIN): src.dev/tool/manager/main/loec-main.c $(LIB)
 $(EXAMPLE_BIN): doc/examples/basic_daw/basic_daw_example.c $(LIB)
 	$(CC) $(CFLAGS) $< $(LIB) -o $@
 
-$(TEST_BIN): test/test_oevc.c $(LIB)
+$(TEST_BIN): test/core/test_oevc.c $(LIB)
 	$(CC) $(CFLAGS) $< $(LIB) -o $@
 
 test: all $(TEST_BIN)
