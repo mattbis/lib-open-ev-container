@@ -438,6 +438,12 @@ oevc_status_t oevc_repair_file(const char *src_path, const char *dst_path, oevc_
         return st;
     }
 
+    if (report->needs_repair) {
+        salvaged.header.flags &= (uint16_t)~OEV_CONT_COMPLETE;
+        salvaged.header.flags |= OEV_CONT_FAST_SAVE;
+        if (salvaged.header.qrate == 0u) salvaged.header.qrate = 1u;
+    }
+
     st = oevc_save_file(&salvaged, dst_path);
     oevc_free(&salvaged);
     return st;

@@ -102,6 +102,9 @@ static void test_rtest_and_repair_corrupt_chunk(void) {
     oevc_container_t fixed;
     assert(oevc_load_file(&fixed, rep_path) == OEVC_OK);
     assert(fixed.chunk_count == 2);
+    assert((fixed.header.flags & OEV_CONT_COMPLETE) == 0);
+    assert((fixed.header.flags & OEV_CONT_FAST_SAVE) != 0);
+    assert(fixed.header.qrate == 1u);
     assert(oevc_find_chunk(&fixed, id1) != NULL);
     assert(oevc_find_chunk(&fixed, id2) == NULL);
     assert(oevc_find_chunk(&fixed, id3) != NULL);
