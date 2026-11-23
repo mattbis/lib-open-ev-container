@@ -1,0 +1,34 @@
+{
+  "container": {
+    "version": 1,
+    "flags": 2,
+    "qrate": 0,
+    "chunk_count": 3
+  },
+  "meta": {
+    "project_name": "UnitTest",
+    "author": "Tester",
+    "software": "TestDAW",
+    "bpm": 120.000,
+    "ppq": 960
+  },
+  "tracks": [
+    {"track_id": 1, "type": "midi", "name": "Keys", "gain_db": 0.000, "pan": 0.000}
+  ],
+  "clips": [
+    {
+      "clip_id": 1, "track_id": 1, "type": "midi", "start_tick": 0, "length_ticks": 960,
+      "asset_path": "",
+      "notes": [{"offset": 0, "dur": 480, "pitch": 60, "vel": 100, "ch": 0}]
+    }
+  ],
+  "routes": [
+
+  ],
+  "plugins": [
+
+  ],
+  "opaque_chunks": [
+
+  ]
+}

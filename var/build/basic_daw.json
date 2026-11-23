@@ -1,0 +1,49 @@
+{
+  "container": {
+    "version": 1,
+    "flags": 2,
+    "qrate": 0,
+    "chunk_count": 13
+  },
+  "meta": {
+    "project_name": "Four Track Rescue Demo",
+    "author": "Matt",
+    "software": "BasicDAW 0.1",
+    "bpm": 128.000,
+    "ppq": 960
+  },
+  "tracks": [
+    {"track_id": 1, "type": "midi", "name": "Lead Synth", "gain_db": -3.000, "pan": 0.000},
+    {"track_id": 2, "type": "audio", "name": "Drum Loop", "gain_db": -1.500, "pan": -0.100},
+    {"track_id": 3, "type": "audio", "name": "Vocal Take", "gain_db": 0.000, "pan": 0.100},
+    {"track_id": 4, "type": "bus", "name": "Master", "gain_db": 0.000, "pan": 0.000}
+  ],
+  "clips": [
+    {
+      "clip_id": 10, "track_id": 1, "type": "midi", "start_tick": 0, "length_ticks": 1920,
+      "asset_path": "",
+      "notes": [{"offset": 0, "dur": 480, "pitch": 60, "vel": 100, "ch": 0}, {"offset": 480, "dur": 480, "pitch": 64, "vel": 95, "ch": 0}, {"offset": 960, "dur": 960, "pitch": 67, "vel": 110, "ch": 0}]
+    },
+    {
+      "clip_id": 11, "track_id": 2, "type": "audio", "start_tick": 0, "length_ticks": 3840,
+      "asset_path": "assets/drums_128bpm.wav",
+      "notes": []
+    },
+    {
+      "clip_id": 12, "track_id": 3, "type": "audio", "start_tick": 1920, "length_ticks": 3840,
+      "asset_path": "assets/vocal_chorus.wav",
+      "notes": []
+    }
+  ],
+  "routes": [
+    {"src_track_id": 1, "dst_track_id": 4, "send_db": 0.000},
+    {"src_track_id": 2, "dst_track_id": 4, "send_db": 0.000},
+    {"src_track_id": 3, "dst_track_id": 4, "send_db": 0.000}
+  ],
+  "plugins": [
+    {"plugin_id": 100, "track_id": 1, "vendor_chunk_id": 12, "name": "VendorSynth Pro", "format": "VST3", "params": [{"id": 1, "name": "cutoff", "value": 0.650}, {"id": 2, "name": "resonance", "value": 0.250}]}
+  ],
+  "opaque_chunks": [
+    {"chunk_id": 12, "tier": "vendor_void", "kind": "vendor_blob", "bytes": 8, "crc32": "0xA9755EEC"}
+  ]
+}

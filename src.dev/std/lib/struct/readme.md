@@ -1,1 +1,1 @@
-the structures are part of the standard in that you can nest it since who knows how your host works.. all i care about is we get some kinda export working.. 
+These structures are part of the standard and can be nested arbitrarily to match any host's internal model, as long as a valid export is produced.

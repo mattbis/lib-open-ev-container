@@ -1,1 +1,3 @@
-### todo - this doesnt really make sense, and is res/ i think
+### TODO
+
+This test placeholder is redundant and likely belongs in `res/`.

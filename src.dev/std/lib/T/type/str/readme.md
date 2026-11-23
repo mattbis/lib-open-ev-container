@@ -1,1 +1,1 @@
-strings are highly encouraged to allow parsing for other software... too much for every plugin and software is lost. since even the basic information is not retrievable in a rescue situation.
+Strings are strongly encouraged so other software can parse basic identifiers; too often plugin and software metadata is lost because even basic names are unreadable in a rescue situation.

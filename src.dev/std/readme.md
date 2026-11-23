@@ -1,24 +1,23 @@
-### standard
+### Standard
 
-1. this is bare bones . it just supports a binary serialiser, json, or xml.
-2. its first purpose is to ensure rescue of projects no matter waht,....
+1. Bare-bones by design: supports a binary serializer, JSON, or XML.
+2. Its primary purpose is to guarantee project rescue no matter what.
 
-  i. an export should be symbols and containers of export serialisers... it can just be this in the common formats.. it can be in various resolution containers so long as the chunk data is compatible.. ( todo ) 
+   i. An export consists of symbols and containers from export serializers—either in common formats or across different resolution containers, provided the chunk data is compatible (TODO).
 
-a. scale, standard, precision, units. 
-- standard is a grouping of all these ( todo )
-- precision is the container, a subcontainer, and global for example m1 m2
+   a. **Scale, standard, precision, units:**
+      - A *standard* groups these settings together (TODO).
+      - *Precision* can be set at the container, subcontainer, or global level (e.g., `m1`, `m2`).
+      - This lets a host perform a fast save instead of a complete save with every IL-expected field, adjusting the numeric precision of buffer data-type symbols as needed.
 
-the reason for this is making a fast save over a complete save with all data expected by the container should it implement and IL that you already generated and extended from the base language. In this scenario you could change the precision of the buffer data type symbols ... and how big your juicy numbers are.
+   b. The library does not need to know your custom IL, as long as it can export it into a general format.
 
-b. the library doesnt know you own IL: but it can export this into a general format. 
+   c. Tiers allow a project to store inner part revisions and link common data (TODO: this would allow a single project to hold its own complete history).
 
-c. tiers allow a proejct to have inner par revisions and linking common data... ( TODO: this would allow one project ot have its own complete history ) 
+   d. DRM or proprietary vendor info is discouraged, but supported as a separate protected tier.
 
-d. drm or vendor info is discouraged but is just another protected tier
+#### Examples
 
-#### examples
-
-- mod metadata of author to the container and set software, create a free tier, and serialise a buffer into the internal buffer format.. using the standard IL symbol langauge
-- do the same but use structured data ( xml, json ... )  and string format
-- compare paths of the free and open tier to merge inner parts into another frakenstein project
+- Modify author metadata on the container, set the software name, create a free tier, and serialize a buffer into the internal buffer format using the standard IL symbol language.
+- Do the same using structured text data (XML, JSON, etc.) and string format.
+- Compare paths between the free and open tiers to merge inner parts into another combined project.

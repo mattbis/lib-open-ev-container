@@ -1,52 +1,31 @@
-# std:op
-## note most of these operations are completely uneessary for a host.. and are included only for the library tool
+# `std:op`
 
-## container library operations
-- todo(matt): move into lib/op
-#### calc
-- calc the size of a path within container
-#### create
-- recreate a new empty container
-#### ctest
-- test the container
-#### ctier
-- extend container with new tier
-#### ctree
-- used by consolidate to restructure container
-#### empty 
-- completely empty header only container, with markers and word empty section
-#### export
-- container export - this is controlled by modes...
-#### id 
-- get a std container id that is unique
-#### import
-- import another container into the current container
-#### imut
-- make a dotpath as immutable
-#### mod
-- change a container path using selector format to change _anything_
-#### mut 
-- mutate a direct path and just one value, fast
-#### q 
-- query paths
-#### qbuf
-- get all buffers
-#### qrate
-- a container creates a hierachy on the quality of its data... and whether the save was fast or complete with all data required **to gurantee it can be reproduced**
-#### ...
-#### repair
-- check inner consistency and data stored within buffers
-#### rtest
-- check repair is needed
-#### sbuf
-- set a new buffer as an interface, this is how anything is added
-#### sfixed
-- sets a fixed sized buffer for arbitrary data
-#### sign
-- signs a data buffer, for checksum, **automatic** all writes are checksummed
-#### stest
-- sets a test that the container must perform this is not transmutable to other hosts
-#### stier
-- creates a tier level - a container can have tiers of tiers, as an auto tree, tiers are typically used to differ from vendor protected data and free data... in practive you want to avoid such complexities.. a consolidation will serialise super deep structures into faster chunks...
-#### swrite
-- standard write for bulk data, or one data etc
+> **Note:** Most of these operations are unnecessary for a DAW host and are included only for the standalone library/CLI tool.
+
+## Container Library Operations
+
+- TODO (matt): Move into `lib/op`.
+
+- **`calc`**: Calculate the size of a path within the container.
+- **`create`**: Create a new empty container.
+- **`ctest`**: Test the container.
+- **`ctier`**: Extend the container with a new tier.
+- **`ctree`**: Used by `consolidate` to restructure the container.
+- **`empty`**: Completely empty header-only container with markers and an empty word section.
+- **`export`**: Container export, controlled by modes.
+- **`id`**: Get a unique standard container ID.
+- **`import`**: Import another container into the current container.
+- **`imut`**: Mark a dotpath as immutable.
+- **`mod`**: Change any container path using selector format.
+- **`mut`**: Mutate a direct path and a single value quickly.
+- **`q`**: Query paths.
+- **`qbuf`**: Get all buffers.
+- **`qrate`**: Grade the quality of container data (whether the save was fast/partial or complete with all data required **to guarantee it can be reproduced**).
+- **`repair`**: Check inner consistency and data stored within buffers, salvaging valid chunks.
+- **`rtest`**: Check whether repair is needed.
+- **`sbuf`**: Set a new buffer as an interface (this is how data is added).
+- **`sfixed`**: Set a fixed-size buffer for arbitrary data.
+- **`sign`**: Sign a data buffer with a checksum (**automatic**: all writes are checksummed).
+- **`stest`**: Set a test that the container must pass (not transmutable to other hosts).
+- **`stier`**: Create a tier level. A container can have nested tiers as a tree, typically to separate vendor-protected data from free data. In practice, avoid deep nesting; `consolidate` serializes deep structures into faster chunks.
+- **`swrite`**: Standard write for bulk or single data.

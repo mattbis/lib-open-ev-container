@@ -1,2 +1,2 @@
-1/ this will burrow from something oss a typical foundation and limit to 4t and then implement export... it will have a few things you can do per part.. as a simple demonstration and for me to work out the best way teh std should work
-2/ it will also import hte same again despite it being changed via the manager
+1. Borrows a typical OSS foundation, limits to 4 tracks, and implements export—a simple demonstration to work out the best way `std` should work.
+2. Also re-imports the container after it has been modified by the manager tool.

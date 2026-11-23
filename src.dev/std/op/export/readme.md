@@ -1,1 +1,1 @@
-1. to qualify you must implement a container export... to one format. 
+1. To qualify as compliant, a host must implement container export to at least one format.

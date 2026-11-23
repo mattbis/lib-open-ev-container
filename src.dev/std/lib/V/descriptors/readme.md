@@ -1,2 +1,3 @@
-### values of types can have descriptor properties which change their interpretation.
-- see `examples\descriptors` and how this is generated via an IL
+### Type Descriptors
+
+Type values can carry descriptor properties that change their interpretation (see `examples/descriptors` for how these are generated via an IL).

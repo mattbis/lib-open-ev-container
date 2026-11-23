@@ -1,2 +1,3 @@
-## implement here a basic daw
-- this uses the container format for its saves... it allows teh playing of four tracks... 
+## Basic DAW Example
+
+Demonstrates a minimal 4-track DAW using the container format for its saves (see [basic_daw_example.c](basic_daw_example.c)).

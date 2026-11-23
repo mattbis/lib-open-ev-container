@@ -1,1 +1,1 @@
-the container contains midi as a text sequence//
+The container stores MIDI as a text sequence.

@@ -1,7 +1,8 @@
-# std container operations
-see `std/op` for internal container operations.
+# Standard Container Operations
 
-## these operations are always included 
+See `std/op` for internal container operations.
 
-- qrate can mean the host didnt save a free version and only saved its protected one but this has an IL that can autoschema or doesnt...
-  - you can see here integrity is up to the host, and granularity in its export settings.... the a1, b2, c3 monikiers are basically this is how it should work when we reach C3 ( ie most of hte data needed so _it just works_
+## Always-Included Operations
+
+- **`qrate`**: Indicates completeness—for example, if a host did not save a free tier and only saved its protected tier, or whether its IL can auto-schema or not.
+  - Integrity and export granularity are controlled by the host. The `a1`, `b2`, `c3` markers represent progressive completeness levels up to `C3` (most of the data needed so *it just works*).

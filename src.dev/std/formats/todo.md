@@ -1,1 +1,1 @@
-1. one of https://en.wikipedia.org/wiki/Comparison_of_data-serialization_formats or standard within the industry.
+1. Evaluate standard data-serialization formats (see https://en.wikipedia.org/wiki/Comparison_of_data-serialization_formats).

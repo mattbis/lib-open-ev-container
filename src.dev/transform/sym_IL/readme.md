@@ -1,5 +1,6 @@
-# transform embedded IL to be qrated 0 
-1. qrate 0 means no problems
-2. transform can create mirrors
-3. transform patch ver, subver
-4. transform via artbitary operations
+# Transform Embedded IL to `qrate 0`
+
+1. `qrate 0` means no problems (fully reproducible).
+2. Transforms can create mirrors.
+3. Transforms can patch version and subversion.
+4. Transforms can apply arbitrary operations.

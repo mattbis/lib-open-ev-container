@@ -1,9 +1,11 @@
-### releases 
+### Releases
 
-- the container itself will never change without a major ... any release cadence would be on container code and includes...
-- the standard format of buffers in the typical structure is versioned... and the base will not be released until all initiating parties agree on it.
+- The container wire format itself will never change without a major version bump; any regular release cadence applies to container code and includes.
+- The standard buffer format is versioned, and the base will not be frozen until all initiating parties agree on it.
 
-#### this dir specifies how the src is modified or included... since its strictly controlled by a linear mod registry
+#### Modification Registry
 
-- the channels are different to other projects a0 still works in terms of storage.. and latter channels are refinements...
-- TODO: (matt): actual names would be btters.... so the phase of noise with development is all contained in the `alpha:0` channel.. `b1` is the stability of this and `c2` is the experimental
+This directory specifies how source files are modified or included, strictly controlled by a linear mod registry.
+
+- Unlike other projects, channel `a0` still works for storage, and later channels are refinements.
+- TODO (matt): Better channel names would help—for example, noisy development lives in `alpha:0`, `b1` is the stabilization channel, and `c2` is experimental.

@@ -1,1 +1,1 @@
-- compression with lzma2 is an option but out of scope
+- Compression with LZMA2 is an option, but currently out of scope.

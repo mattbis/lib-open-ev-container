@@ -1,1 +1,1 @@
-1. if the app uses the standard then this tool should work.. `oevcontbinf`
+1. If an application uses the `oevcontbinf` standard, this manager tool should work with it.

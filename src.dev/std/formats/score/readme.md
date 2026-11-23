@@ -1,1 +1,3 @@
-### this format is a place holder for `res` \formats\ ( or probably lib\static from other libraries... as an option. The container does not enforce any kind of rules or preference on formats.. just that there is something to rescue
+### Score Format Placeholder
+
+Placeholder for `res/formats/` (or static libraries from other projects). The container does not enforce preferences on score formats—only that there is standard musical data available to rescue.

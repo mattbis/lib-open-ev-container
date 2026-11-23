@@ -1,1 +1,1 @@
-1. non-free data hiding mechanism 
+1. Non-free data hiding mechanism.

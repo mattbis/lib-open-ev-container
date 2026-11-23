@@ -1,12 +1,17 @@
-# make project data machine readable
-# make project data editable
-# make all assets replicable
-# generator config in open format
-# effect config in open format
-# sequence in open format
-# compound custom in open format
-- ports
-- routes
-- events
-- control
-- audio
+# Goals
+
+- Make project data machine-readable
+- Make project data editable
+- Make all assets replicable
+- Store generator configuration in an open format
+- Store effect configuration in an open format
+- Store sequences in an open format
+- Store compound custom data in an open format
+
+## Core Concepts
+
+- Ports
+- Routes
+- Events
+- Control
+- Audio
